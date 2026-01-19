@@ -58,7 +58,8 @@ Negotiation availability
 Property type
 
 🏗️ Project Structure
-```real_estate_analysis/
+```
+real_estate_analysis/
 │
 ├── data/
 │   ├── Indian_housing_Delhi_data.csv
@@ -78,7 +79,8 @@ Property type
 │
 ├── screenshots/
 │
-└── README.md ```
+└── README.md
+```
 
 
 
