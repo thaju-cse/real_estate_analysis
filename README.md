@@ -63,21 +63,24 @@ real_estate_analysis/
 ├── data/
 │   ├── Indian_housing_Delhi_data.csv
 │   ├── Indian_housing_Mumbai_data.csv
-│   ├── Indian_housing_Pune_data.csv
+│   └── Indian_housing_Pune_data.csv
 │
 ├── notebooks/
 │   ├── 01_data_cleaning.ipynb
-│   ├── 02_eda_analysis.ipynb
+│   └── 02_eda_analysis.ipynb
 │
 ├── sql/
 │   ├── schema.sql
-│   ├── analysis_queries.sql
+│   └── analysis_queries.sql
 │
 ├── dashboard/
-│   ├── Real_Estate_Analytics_Dashboard.pbix
-│   ├── screenshots/
+│   └── Real_Estate_Analytics_Dashboard.pbix
+│
+├── screenshots/
 │
 └── README.md
+
+
 
 🔄 Step-by-Step Project Workflow
 🔹 Step 1: Data Loading & Consolidation
