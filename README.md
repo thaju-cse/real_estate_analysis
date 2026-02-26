@@ -1,13 +1,17 @@
-🏢 Real Estate Space Utilization & Revenue Analysis
+# 🏢 Real Estate Space Utilization & Revenue Analysis
 
 Delhi | Mumbai | Pune
 
-📌 Project Overview
+--- 
+
+## 📌 Project Overview
 
 This project analyzes real estate rental listings across major Indian metro cities to understand pricing trends, space utilization, and revenue efficiency.
 The goal is to support data-driven decisions related to pricing strategy, location selection, and space optimization for a space-providing company.
 
-🎯 Business Objective
+---
+
+## 🎯Business Objective
 
 A real estate / space-providing company wants to:
 
@@ -19,7 +23,9 @@ Evaluate pricing efficiency (price per square foot)
 
 Understand the impact of furnishing and negotiation on rent
 
-🧰 Tools & Technologies Used
+---
+
+## 🧰 Tools & Technologies Used
 
 Python (Pandas, Matplotlib, Seaborn)
 
@@ -33,31 +39,28 @@ Generative AI
 
 Internet Search Engines
 
-📂 Dataset Description
+---
 
-The project uses three real estate datasets:
+## 📂 Dataset Description
+These datasets are downloaded form Kaggle website.
+### The project uses three real estate datasets:
 
-Indian_housing_Delhi_data.csv
+1. Indian_housing_Delhi_data.csv
+2. Indian_housing_Mumbai_data.csv
+3. Indian_housing_Pune_data.csv
 
-Indian_housing_Mumbai_data.csv
+### Each dataset contains rental listing information such as:
 
-Indian_housing_Pune_data.csv
+- City & location
+- Property size (sq ft)
+- Monthly rent
+- Furnishing status
+- Negotiation availability
+- Property type
 
-Each dataset contains rental listing information such as:
+---
 
-City & location
-
-Property size (sq ft)
-
-Monthly rent
-
-Furnishing status
-
-Negotiation availability
-
-Property type
-
-🏗️ Project Structure
+## 🏗️ Project Structure
 ```
 real_estate_analysis/
 │
@@ -82,76 +85,49 @@ real_estate_analysis/
 └── README.md
 ```
 
+---
 
+## 🔄 Step-by-Step Project Workflow
+### 🔹 Step 1: Data Loading & Consolidation
+- Loaded all three city datasets using Python
+- Added a city column for consistency
+- Combined datasets into a single master dataframe
+- Outcome: Unified dataset with ~15,000 rental listings.
 
-🔄 Step-by-Step Project Workflow
-🔹 Step 1: Data Loading & Consolidation
-
-Loaded all three city datasets using Python
-
-Added a city column for consistency
-
-Combined datasets into a single master dataframe
-
-Outcome:
-Unified dataset with ~15,000 rental listings.
-
-🔹 Step 2: Data Cleaning & Preparation
+### 🔹 Step 2: Data Cleaning & Preparation
 
 Performed essential cleaning to handle real-world data issues:
-
-Removed text like "sq ft" and commas from house_size
-
-Converted house_size and price to numeric values
-
-Handled missing values (balconies, negotiable flag)
-
-Removed irrelevant columns
-
-Removed extreme outliers using IQR method
-
+- Removed text like "sq ft" and commas from house_size
+- Converted house_size and price to numeric values
+- Handled missing values (balconies, negotiable flag)
+- Removed irrelevant columns
+- Removed extreme outliers using IQR method
 New Features Created:
+- price_per_sqft
+- size_bucket (Small / Medium / Large)
+- property_id (unique identifier)
 
-price_per_sqft
+### 🔹 Step 3: SQL Database Setup
 
-size_bucket (Small / Medium / Large)
+- Imported cleaned CSV into MySQL
+- Defined correct data types for all columns
+- Added a primary key (property_id)
+- Created indexes on frequently queried fields (city, location)
+- Removed unused columns from the database
+- Purpose: Enable fast, reliable analytical queries.
 
-property_id (unique identifier)
-
-🔹 Step 3: SQL Database Setup
-
-Imported cleaned CSV into MySQL
-
-Defined correct data types for all columns
-
-Added a primary key (property_id)
-
-Created indexes on frequently queried fields (city, location)
-
-Removed unused columns from the database
-
-Purpose:
-Enable fast, reliable analytical queries.
-
-🔹 Step 4: Business Questions Answered Using SQL
+### 🔹 Step 4: Business Questions Answered Using SQL
 
 Key SQL analyses included:
+- Average rent by city
+- Price per square foot by city
+- Top 10 premium locations
+- Performance by space size category
+- Impact of furnishing on rent
+- Negotiable vs non-negotiable pricing comparison
+- These queries simulate real business reporting.
 
-Average rent by city
-
-Price per square foot by city
-
-Top 10 premium locations
-
-Performance by space size category
-
-Impact of furnishing on rent
-
-Negotiable vs non-negotiable pricing comparison
-
-These queries simulate real business reporting.
-
-🔹 Step 5: Exploratory Data Analysis (EDA)
+### 🔹 Step 5: Exploratory Data Analysis (EDA)
 
 Performed EDA using Python to uncover trends and patterns:
 
@@ -167,89 +143,72 @@ Location-level price efficiency analysis
 
 Each visualization was paired with a clear business insight.
 
-🔹 Step 6: Power BI Dashboard Development
+### 🔹 Step 6: Power BI Dashboard Development
 
 Built an interactive Power BI dashboard with:
+- KPI Section
+- Total Listings
+- Average Rent
+- Average Price per Sq Ft
+- Best Performing City
+- Best Space Size Category
+- Visual Analysis
+- Average rent by city
+- Price per square foot by city
+- Size bucket performance
+- Furnishing impact on rent
+- Top 10 premium locations table
+- Interactivity
+- Slicers for City, Size Category, and Furnishing Status
+#### Sample Visualization 
 
-KPI Section
+![Visualization]([https://github.com/thaju-cse/real_estate_analysis/blob/master/dashboard/screenshots/Visualization_1.png]).
 
-Total Listings
+---
 
-Average Rent
+## 📊 Key Insights
 
-Average Price per Sq Ft
+- Mumbai has the highest average rent but high price variability
+- Pune offers more stable pricing efficiency
+- Medium-sized properties provide the best revenue balance
+- Furnished properties command a clear rental premium
+- Certain locations outperform entire cities in price per sq ft
 
-Best Performing City
+---
 
-Best Space Size Category
-
-Visual Analysis
-
-Average rent by city
-
-Price per square foot by city
-
-Size bucket performance
-
-Furnishing impact on rent
-
-Top 10 premium locations table
-
-Interactivity
-
-Slicers for City, Size Category, and Furnishing Status
-
-📊 Key Insights
-
-Mumbai has the highest average rent but high price variability
-
-Pune offers more stable pricing efficiency
-
-Medium-sized properties provide the best revenue balance
-
-Furnished properties command a clear rental premium
-
-Certain locations outperform entire cities in price per sq ft
-
-🧠 Business Impact
+## 🧠 Business Impact
 
 This analysis helps a real estate company to:
+- Optimize pricing strategies
+- Identify high-ROI locations
+- Decide ideal space sizes to invest in
+- Improve revenue through furnishing decisions
 
-Optimize pricing strategies
+---
 
-Identify high-ROI locations
+## 🚀 Future Enhancements
 
-Decide ideal space sizes to invest in
+- Automate data ingestion using ETL pipelines
+- Add time-based trend analysis
+- Forecast rental prices by location
+- Integrate additional metro cities
 
-Improve revenue through furnishing decisions
+---
 
-🚀 Future Enhancements
+## Key Insights that I understood:
 
-Automate data ingestion using ETL pipelines
+- Mumbai leads in absolute rental revenue
+- Pune offers better price stability
+- Medium-sized properties provide best ROI
+- Furnished properties increase revenue
+- Location plays a stronger role than size
 
-Add time-based trend analysis
+---
 
-Forecast rental prices by location
-
-Integrate additional metro cities
-
-
-Key Insights that I understood:
-
-Mumbai leads in absolute rental revenue
-
-Pune offers better price stability
-
-Medium-sized properties provide best ROI
-
-Furnished properties increase revenue
-
-Location plays a stronger role than size
-
-
+## About Me
+Hi there! I am Shaik Thajuddhin, I am a Data Enthusiast and passionate learner to learn and Grow.
 
 Thank You..
 
-
 From 
-Shaik Thajuddhin.
+**Shaik Thajuddhin.**
