@@ -11,7 +11,7 @@ The goal is to support data-driven decisions related to pricing strategy, locati
 
 ---
 
-## 🎯Business Objective
+## Business Objective
 
 A real estate / space-providing company wants to:
 
@@ -25,7 +25,7 @@ Understand the impact of furnishing and negotiation on rent
 
 ---
 
-## 🧰 Tools & Technologies Used
+## Tools & Technologies Used
 
 Python (Pandas, Matplotlib, Seaborn)
 
@@ -41,7 +41,7 @@ Internet Search Engines
 
 ---
 
-## 📂 Dataset Description
+## Dataset Description
 These datasets are downloaded form Kaggle website.
 ### The project uses three real estate datasets:
 
@@ -60,7 +60,7 @@ These datasets are downloaded form Kaggle website.
 
 ---
 
-## 🏗️ Project Structure
+## Project Structure
 ```
 real_estate_analysis/
 │
@@ -87,14 +87,14 @@ real_estate_analysis/
 
 ---
 
-## 🔄 Step-by-Step Project Workflow
-### 🔹 Step 1: Data Loading & Consolidation
+## Step-by-Step Project Workflow
+### Step 1: Data Loading & Consolidation
 - Loaded all three city datasets using Python
 - Added a city column for consistency
 - Combined datasets into a single master dataframe
 - Outcome: Unified dataset with ~15,000 rental listings.
 
-### 🔹 Step 2: Data Cleaning & Preparation
+### Step 2: Data Cleaning & Preparation
 
 #### Performed essential cleaning to handle real-world data issues:
 - Removed text like "sq ft" and commas from house_size
@@ -107,7 +107,7 @@ New Features Created:
 - size_bucket (Small / Medium / Large)
 - property_id (unique identifier)
 
-### 🔹 Step 3: SQL Database Setup
+### Step 3: SQL Database Setup
 
 - Imported cleaned CSV into MySQL
 - Defined correct data types for all columns
@@ -116,7 +116,7 @@ New Features Created:
 - Removed unused columns from the database
 - Purpose: Enable fast, reliable analytical queries.
 
-### 🔹 Step 4: Business Questions Answered Using SQL
+### Step 4: Business Questions Answered Using SQL
 
 #### Key SQL analyses included:
 - Average rent by city
@@ -127,7 +127,7 @@ New Features Created:
 - Negotiable vs non-negotiable pricing comparison
 - These queries simulate real business reporting.
 
-### 🔹 Step 5: Exploratory Data Analysis (EDA)
+### Step 5: Exploratory Data Analysis (EDA)
 
 #### Performed EDA using Python to uncover trends and patterns:
 - Rent comparison across cities
@@ -137,7 +137,7 @@ New Features Created:
 - Location-level price efficiency analysis
 - Each visualization was paired with a clear business insight.
 
-### 🔹 Step 6: Power BI Dashboard Development
+### Step 6: Power BI Dashboard Development
 
 #### Built an interactive Power BI dashboard with:
 - KPI Section
@@ -160,7 +160,7 @@ New Features Created:
 
 ---
 
-## 📊 Key Insights
+## Key Insights
 
 - Mumbai has the highest average rent but high price variability
 - Pune offers more stable pricing efficiency
@@ -170,7 +170,7 @@ New Features Created:
 
 ---
 
-## 🧠 Business Impact
+## Business Impact
 
 This analysis helps a real estate company to:
 - Optimize pricing strategies
@@ -180,7 +180,7 @@ This analysis helps a real estate company to:
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - Automate data ingestion using ETL pipelines
 - Add time-based trend analysis
