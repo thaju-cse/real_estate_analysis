@@ -13,31 +13,22 @@ The goal is to support data-driven decisions related to pricing strategy, locati
 
 ## Business Objective
 
-A real estate / space-providing company wants to:
-
-Compare rental performance across cities
-
-Identify high-value locations and space sizes
-
-Evaluate pricing efficiency (price per square foot)
-
-Understand the impact of furnishing and negotiation on rent
+#### A real estate / space-providing company wants to:
+- Compare rental performance across cities
+- Identify high-value locations and space sizes
+- Evaluate pricing efficiency (price per square foot)
+- Understand the impact of furnishing and negotiation on rent
 
 ---
 
 ## Tools & Technologies Used
 
-Python (Pandas, Matplotlib, Seaborn)
-
-SQL (MySQL)
-
-Power BI Desktop
-
-CSV Data Files
-
-Generative AI
-
-Internet Search Engines
+- Python (Pandas, Matplotlib, Seaborn)
+- SQL (MySQL)
+- Power BI Desktop
+- CSV Data Files
+- Generative AI
+- Internet Search Engines
 
 ---
 
