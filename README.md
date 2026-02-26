@@ -96,7 +96,7 @@ real_estate_analysis/
 
 ### 🔹 Step 2: Data Cleaning & Preparation
 
-Performed essential cleaning to handle real-world data issues:
+#### Performed essential cleaning to handle real-world data issues:
 - Removed text like "sq ft" and commas from house_size
 - Converted house_size and price to numeric values
 - Handled missing values (balconies, negotiable flag)
@@ -118,7 +118,7 @@ New Features Created:
 
 ### 🔹 Step 4: Business Questions Answered Using SQL
 
-Key SQL analyses included:
+#### Key SQL analyses included:
 - Average rent by city
 - Price per square foot by city
 - Top 10 premium locations
@@ -129,23 +129,17 @@ Key SQL analyses included:
 
 ### 🔹 Step 5: Exploratory Data Analysis (EDA)
 
-Performed EDA using Python to uncover trends and patterns:
-
-Rent comparison across cities
-
-Size vs price relationship
-
-Space size category performance
-
-Furnishing impact on pricing
-
-Location-level price efficiency analysis
-
-Each visualization was paired with a clear business insight.
+#### Performed EDA using Python to uncover trends and patterns:
+- Rent comparison across cities
+- Size vs price relationship
+- Space size category performance
+- Furnishing impact on pricing
+- Location-level price efficiency analysis
+- Each visualization was paired with a clear business insight.
 
 ### 🔹 Step 6: Power BI Dashboard Development
 
-Built an interactive Power BI dashboard with:
+#### Built an interactive Power BI dashboard with:
 - KPI Section
 - Total Listings
 - Average Rent
@@ -160,9 +154,9 @@ Built an interactive Power BI dashboard with:
 - Top 10 premium locations table
 - Interactivity
 - Slicers for City, Size Category, and Furnishing Status
-#### Sample Visualization 
+##### Sample Visualization 
 
-![Visualization]([https://github.com/thaju-cse/real_estate_analysis/blob/master/dashboard/screenshots/Visualization_1.png]).
+![Visualization](https://github.com/thaju-cse/real_estate_analysis/blob/master/dashboard/screenshots/Visualization_1.png)
 
 ---
 
@@ -206,9 +200,4 @@ This analysis helps a real estate company to:
 ---
 
 ## About Me
-Hi there! I am Shaik Thajuddhin, I am a Data Enthusiast and passionate learner to learn and Grow.
-
-Thank You..
-
-From 
-**Shaik Thajuddhin.**
+Hi there! I am **Shaik Thajuddhin**, I am a Data Enthusiast and passionate learner to learn and Grow.
